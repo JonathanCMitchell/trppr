@@ -2,3 +2,4 @@ node_modules
 client/bundle.js
 /server/testData.js
 .env
+/client/API_KEY.js

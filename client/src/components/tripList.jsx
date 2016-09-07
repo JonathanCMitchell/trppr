@@ -2,6 +2,7 @@ import React from 'react';
 import {render} from 'react-dom';
 import Trip from './trip.jsx';
 import axios from 'axios';
+// import {API_KEY} from '../../API_KEY.js'
 
 //  props: {
 //       reserveSeat: function() {},
@@ -26,20 +27,20 @@ import axios from 'axios';
 //           }
 //   ]
 // }
-
+   
 
 
   const TripList = (props) => {
      console.log('props inside triplist', props)
      //first make API call to googleMapDirections to get latitude and longitude
      // have a .then (function(data) ) then take the data
-  
+    
 
     axios.get('https://maps.googleapis.com/maps/api/directions/json?', {
     params: {
       "origin": props.trips[0].startSt + props.trips[0].startCity,
       "destination": props.trips[0].endSt + props.trips[0].endCity,
-      "key": process.env.google_api_key
+      "key": 'inserkey'
     }
     })
     .then(function(response){
