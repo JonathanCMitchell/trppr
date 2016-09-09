@@ -84,7 +84,7 @@ module.exports = (app, express) => {
   // handle every other route with index.html, which will contain
   // a script tag to your application's JavaScript file(s).
   app.get('*', function (request, response){
-    response.sendFile(path.resolve('./', 'client', 'index.html'))
+    response.sendFile(path.resolve('./', 'client', 'index.html', 'googlec40036105de9f248.html'))
   })
 
   app.get('*', (req, res) => {
