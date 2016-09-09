@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {render} from 'react-dom';
 import {browserHistory} from 'react-router';
 import axios from 'axios';
-import Directions from './googleMap.jsx';
 import NavBar from './navBar.jsx';
 import Geosuggest from 'react-geosuggest';
 
@@ -177,7 +176,6 @@ class CreateTrip extends Component {
               className="form-control"
               value = {this.state.description}
               onChange = {this.handleChange.bind(this, 'description')} />
-
               <input type = 'submit' value = 'Create' className='btn btn-primary'/>
           </div>
         </form>

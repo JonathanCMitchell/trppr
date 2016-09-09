@@ -11,7 +11,7 @@ import Directions from './googleMap.jsx'
 
      return (
        <div className="container">
-        <div id="googleMapDirections">
+        <div className="googleMapDirections">
          <Directions TripList={props}/>
          </div>
          <div className="tripContainer">

@@ -132,7 +132,7 @@ class Directions extends Component {
     console.log('__thisState is ', this.state)
     return (
       <div className="mapContainerGeneral">       
-         <div id="tryGoogleMap">
+         <div className="tryGoogleMap">
           <SimpleDirections
             results={this.state.results}
             centerPoints={this.state.centerPoints}
